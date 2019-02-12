@@ -5,7 +5,7 @@ const makeDir = require('make-dir');
 
 const cli = meow(`
 	Usage
-	  $ make-dir <dir> …
+	  $ make-dir <directory> …
 
 	Options
 	  --mode  Directory permissions
@@ -14,24 +14,26 @@ const cli = meow(`
 	  $ make-dir unicorn/awesome foo/bar
 	  $ make-dir rainbow --mode=0666
 `, {
-	string: [
-		'mode'
-	]
+	flags: {
+		mode: {
+			type: 'string'
+		}
+	}
 });
 
-const input = cli.input;
+const {input: directories} = cli;
 
-if (input.length === 0) {
+if (directories.length === 0) {
 	console.error('Specify at least one path');
 	process.exit(1);
 }
 
-const opts = {};
+const options = {};
 
 if (cli.flags.mode) {
-	opts.mode = parseInt(cli.flags.mode, 8);
+	options.mode = parseInt(cli.flags.mode, 8);
 }
 
-for (const dir of input) {
-	makeDir.sync(dir, opts);
+for (const directory of directories) {
+	makeDir.sync(directory, options);
 }

@@ -1,61 +1,61 @@
 {
-  "name": "make-dir-cli",
-  "version": "1.0.0",
-  "description": "Make directories and their parents if needed - Like `mkdir -p`, but cross-platform",
-  "license": "MIT",
-  "repository": "sindresorhus/make-dir-cli",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "bin": {
-    "make-dir": "cli.js"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "cli.js"
-  ],
-  "keywords": [
-    "cli-app",
-    "cli",
-    "mkdir",
-    "mkdirp",
-    "make",
-    "directories",
-    "dir",
-    "dirs",
-    "folders",
-    "directory",
-    "folder",
-    "path",
-    "parent",
-    "parents",
-    "intermediate",
-    "recursively",
-    "recursive",
-    "create",
-    "fs",
-    "filesystem",
-    "file-system",
-    "cross-platform",
-    "macos",
-    "linux",
-    "windows"
-  ],
-  "dependencies": {
-    "make-dir": "^1.0.0",
-    "meow": "^3.7.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "execa": "^0.6.3",
-    "tempy": "^0.1.0",
-    "xo": "*"
-  }
+	"name": "make-dir-cli",
+	"version": "1.0.0",
+	"description": "Make directories and their parents if needed - Like `mkdir -p`, but cross-platform",
+	"license": "MIT",
+	"repository": "sindresorhus/make-dir-cli",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"bin": {
+		"make-dir": "cli.js"
+	},
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		"mkdir",
+		"mkdirp",
+		"make",
+		"directories",
+		"dir",
+		"dirs",
+		"folders",
+		"directory",
+		"folder",
+		"path",
+		"parent",
+		"parents",
+		"intermediate",
+		"recursively",
+		"recursive",
+		"create",
+		"fs",
+		"filesystem",
+		"file-system",
+		"cross-platform",
+		"macos",
+		"linux",
+		"windows"
+	],
+	"dependencies": {
+		"make-dir": "^2.0.0",
+		"meow": "^5.0.0"
+	},
+	"devDependencies": {
+		"ava": "^1.2.1",
+		"execa": "^1.0.0",
+		"tempy": "^0.2.1",
+		"xo": "^0.24.0"
+	}
 }

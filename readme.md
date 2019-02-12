@@ -16,7 +16,7 @@ $ npm install --global make-dir-cli
 $ make-dir --help
 
   Usage
-    $ make-dir <dir> …
+    $ make-dir <directory> …
 
   Options
     --mode  Directory permissions

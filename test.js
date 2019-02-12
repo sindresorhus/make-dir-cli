@@ -4,7 +4,7 @@ import test from 'ava';
 import execa from 'execa';
 import tempy from 'tempy';
 
-test(async t => {
+test('main', async t => {
 	const paths = [
 		path.join(tempy.directory(), 'foo/unicorn'),
 		path.join(tempy.directory(), 'bar/rainbow')
