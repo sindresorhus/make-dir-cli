@@ -1,4 +1,4 @@
-# make-dir-cli [![Build Status](https://travis-ci.org/sindresorhus/make-dir-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/make-dir-cli)
+# make-dir-cli
 
 > Make directories and their parents if needed - Like `mkdir -p`, but cross-platform
 
