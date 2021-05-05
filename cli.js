@@ -18,7 +18,8 @@ const cli = meow(`
 		mode: {
 			type: 'string'
 		}
-	}
+	},
+	importMeta: import.meta
 });
 
 const {input: directories} = cli;
