@@ -2,13 +2,11 @@
 
 > Make directories and their parents if needed - Like `mkdir -p`, but cross-platform
 
-
 ## Install
 
 ```
 $ npm install --global make-dir-cli
 ```
-
 
 ## Usage
 
@@ -42,7 +40,6 @@ $ tree
         └── cake
 ```
 
-
 ## Tip
 
 Create a shell alias for less typing:
@@ -51,13 +48,7 @@ Create a shell alias for less typing:
 alias md=make-dir
 ```
 
-
 ## Related
 
 - [make-dir](https://github.com/sindresorhus/make-dir) - API for this module
 - [del-cli](https://github.com/sindresorhus/del-cli) - Delete files and directories
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)

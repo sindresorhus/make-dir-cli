@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 import meow from 'meow';
 import makeDir from 'make-dir';
 
@@ -14,12 +13,12 @@ const cli = meow(`
 	  $ make-dir unicorn/awesome foo/bar
 	  $ make-dir rainbow --mode=0666
 `, {
+	importMeta: import.meta,
 	flags: {
 		mode: {
 			type: 'string'
 		}
-	},
-	importMeta: import.meta
+	}
 });
 
 const {input: directories} = cli;
