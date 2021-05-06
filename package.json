@@ -1,6 +1,6 @@
 {
 	"name": "make-dir-cli",
-	"version": "2.0.0",
+	"version": "3.0.0",
 	"description": "Make directories and their parents if needed - Like `mkdir -p`, but cross-platform",
 	"license": "MIT",
 	"repository": "sindresorhus/make-dir-cli",
