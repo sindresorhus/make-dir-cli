@@ -9,11 +9,13 @@
 		"email": "sindresorhus@gmail.com",
 		"url": "sindresorhus.com"
 	},
+	"type": "module",
+	"exports": "./cli.js",
 	"bin": {
 		"make-dir": "cli.js"
 	},
 	"engines": {
-		"node": ">=6"
+		"node": ">=12.17"
 	},
 	"scripts": {
 		"test": "xo && ava"
@@ -50,12 +52,12 @@
 	],
 	"dependencies": {
 		"make-dir": "^2.0.0",
-		"meow": "^5.0.0"
+		"meow": "^10.0.0"
 	},
 	"devDependencies": {
-		"ava": "^1.2.1",
+		"ava": "^3.15.0",
 		"execa": "^1.0.0",
 		"tempy": "^0.2.1",
-		"xo": "^0.24.0"
+		"xo": "^0.39.1"
 	}
 }

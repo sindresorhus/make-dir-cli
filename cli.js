@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-'use strict';
-const meow = require('meow');
-const makeDir = require('make-dir');
+
+import meow from 'meow';
+import makeDir from 'make-dir';
 
 const cli = meow(`
 	Usage
@@ -18,7 +18,8 @@ const cli = meow(`
 		mode: {
 			type: 'string'
 		}
-	}
+	},
+	importMeta: import.meta
 });
 
 const {input: directories} = cli;
@@ -31,7 +32,7 @@ if (directories.length === 0) {
 const options = {};
 
 if (cli.flags.mode) {
-	options.mode = parseInt(cli.flags.mode, 8);
+	options.mode = Number.parseInt(cli.flags.mode, 8);
 }
 
 for (const directory of directories) {
