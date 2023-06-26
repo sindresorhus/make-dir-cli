@@ -49,7 +49,7 @@
 		"windows"
 	],
 	"dependencies": {
-		"make-dir": "^3.1.0",
+		"make-dir": "^4.0.0",
 		"meow": "^10.0.0"
 	},
 	"devDependencies": {
