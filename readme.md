@@ -4,8 +4,8 @@
 
 ## Install
 
-```
-$ npm install --global make-dir-cli
+```sh
+npm install --global make-dir-cli
 ```
 
 ## Usage
@@ -44,11 +44,11 @@ $ tree
 
 Create a shell alias for less typing:
 
-```
+```sh
 alias md=make-dir
 ```
 
 ## Related
 
-- [make-dir](https://github.com/sindresorhus/make-dir) - API for this module
+- [make-dir](https://github.com/sindresorhus/make-dir) - API for this package
 - [del-cli](https://github.com/sindresorhus/del-cli) - Delete files and directories

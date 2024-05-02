@@ -1,6 +1,7 @@
 #!/usr/bin/env node
+import process from 'node:process';
 import meow from 'meow';
-import makeDir from 'make-dir';
+import {makeDirectorySync} from 'make-dir';
 
 const cli = meow(`
 	Usage
@@ -16,9 +17,9 @@ const cli = meow(`
 	importMeta: import.meta,
 	flags: {
 		mode: {
-			type: 'string'
-		}
-	}
+			type: 'string',
+		},
+	},
 });
 
 const {input: directories} = cli;
@@ -35,5 +36,5 @@ if (cli.flags.mode) {
 }
 
 for (const directory of directories) {
-	makeDir.sync(directory, options);
+	makeDirectorySync(directory, options);
 }

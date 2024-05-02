@@ -15,7 +15,7 @@
 		"make-dir": "./cli.js"
 	},
 	"engines": {
-		"node": ">=12.17"
+		"node": ">=18"
 	},
 	"scripts": {
 		"test": "xo && ava"
@@ -49,13 +49,13 @@
 		"windows"
 	],
 	"dependencies": {
-		"make-dir": "^4.0.0",
-		"meow": "^10.0.0"
+		"make-dir": "^5.0.0",
+		"meow": "^13.2.0"
 	},
 	"devDependencies": {
-		"ava": "^3.15.0",
-		"execa": "^5.0.0",
-		"tempy": "^1.0.1",
-		"xo": "^0.39.1"
+		"ava": "^6.1.2",
+		"execa": "^8.0.1",
+		"tempy": "^3.1.0",
+		"xo": "^0.58.0"
 	}
 }
